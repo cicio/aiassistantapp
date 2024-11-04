@@ -1,8 +1,9 @@
-module github.com/cicio/aiassistantapp/frontend
+module github.com/cicio/aiassistantapp
 
 go 1.23.2
 
 require (
+	github.com/cicio/aiassistantapp/frontend/handlers v0.0.0-20241104035354-92f3b079df5c
 	github.com/gofiber/fiber/v2 v2.52.5
 	github.com/gofiber/template/html/v2 v2.1.2
 )

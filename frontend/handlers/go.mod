@@ -1,4 +1,4 @@
-module github.com/cicio/aiassistantapp/frontend/handlers
+module github.com/cicio/aiassistantapp
 
 go 1.23.2
 
