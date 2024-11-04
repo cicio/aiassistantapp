@@ -1,6 +1,7 @@
 package main
 
 import (
+	"github.com/cicio/aiassistantapp/frontend/handlers"
 	"github.com/gofiber/fiber/v2"
 	"github.com/gofiber/template/html/v2"
 )
@@ -24,7 +25,10 @@ func main() {
 	})
 
 	// Create a new AppHAndler
-	appHandler := NewAppHandler()
+	appHandler := handlers.NewAppHandler()
+
+	// Use the AppHandler to handle the GET request to "/"
+	app.Get("/", appHandler.HandleGetIndex)
 
 	// Start the server on port 3000
 	app.Listen(":3000")
