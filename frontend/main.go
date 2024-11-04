@@ -23,6 +23,9 @@ func main() {
 		return c.SendString("Welcome to Fiber ")
 	})
 
+	// Create a new AppHAndler
+	appHandler := NewAppHandler()
+
 	// Start the server on port 3000
 	app.Listen(":3000")
 }

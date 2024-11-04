@@ -2,12 +2,14 @@ module github.com/cicio/aiassistantapp/frontend
 
 go 1.23.2
 
-require github.com/gofiber/template/html/v2 v2.1.2
+require (
+	github.com/gofiber/fiber/v2 v2.52.5
+	github.com/gofiber/template/html/v2 v2.1.2
+)
 
 require (
 	github.com/andybalholm/brotli v1.1.1 // indirect
 	github.com/fasthttp/websocket v1.5.10 // indirect
-	github.com/gofiber/fiber/v2 v2.52.5 // indirect
 	github.com/gofiber/fiber/v3 v3.0.0-beta.3 // indirect
 	github.com/gofiber/template v1.8.3 // indirect
 	github.com/gofiber/utils v1.1.0 // indirect
